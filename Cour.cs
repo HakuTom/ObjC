@@ -10,6 +10,7 @@ namespace ConsoleApplication10
     {
         static void Main(string[] args)
         {
+            //блабла
         }
     }
 }
