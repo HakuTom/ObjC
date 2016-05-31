@@ -1,0 +1,11 @@
+c:\users\thomas\documents\visual studio 2015\Projects\AstronomerGuide\bin\Debug\AstronomerGuide.exe.config
+C:\Users\Thomas\Documents\Visual Studio 2015\Projects\AstronomerGuide\bin\Debug\AstronomerGuide.exe
+C:\Users\Thomas\Documents\Visual Studio 2015\Projects\AstronomerGuide\bin\Debug\AstronomerGuide.pdb
+C:\Users\Thomas\Documents\Visual Studio 2015\Projects\AstronomerGuide\obj\Debug\AstronomerGuide.Properties.Resources.resources
+C:\Users\Thomas\Documents\Visual Studio 2015\Projects\AstronomerGuide\obj\Debug\AstronomerGuide.csproj.GenerateResource.Cache
+C:\Users\Thomas\Documents\Visual Studio 2015\Projects\AstronomerGuide\obj\Debug\AstronomerGuide.exe
+C:\Users\Thomas\Documents\Visual Studio 2015\Projects\AstronomerGuide\obj\Debug\AstronomerGuide.pdb
+C:\Users\Thomas\Documents\Visual Studio 2015\Projects\AstronomerGuide\bin\Debug\MetroFramework.dll
+C:\Users\Thomas\Documents\Visual Studio 2015\Projects\AstronomerGuide\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Thomas\Documents\Visual Studio 2015\Projects\AstronomerGuide\obj\Debug\AstronomerGuide.Form1.resources
+C:\Users\Thomas\Documents\Visual Studio 2015\Projects\AstronomerGuide\obj\Debug\AstronomerGuide.csprojResolveAssemblyReference.cache
