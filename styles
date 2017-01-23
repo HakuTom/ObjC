@@ -36,13 +36,33 @@ body a:hover{
 	text-decoration:none;
 }
 /*-- banner --*/
-.banner{
-	background: url(../images/1.jpg)no-repeat 0px 0px;
-	-webkit-background-size:cover;
-	background-size:cover;
-	-moz-background-size:cover;
-	min-height:780px;
+.banner {
+    position: relative;
+    background: #000;
+    overflow: hidden;
 }
+.banner:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    min-height:780px;
+    z-index: 0;
+    opacity: 0.34;
+    background-image: url(../images/1t1.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+
 .wthree-header {
     padding: 2em 0;
 } 
@@ -52,7 +72,7 @@ body a:hover{
     line-height: 1em;
 }
 .agileits-logo h1 a {
-    color: #fff;
+    color: #4A7F4E;
     text-decoration: none;
     font-weight: 300;
 } 
@@ -91,14 +111,14 @@ body a:hover{
 	-moz-transition: box-shadow 0.3s;
 	-o-transition: box-shadow 0.3s;
 	-ms-transition: box-shadow 0.3s;
-    transition: box-shadow 0.3s;      
+    transition: box-shadow 0.3s;
 } 
 .icon-border::before {
 	-webkit-box-shadow: inset 0 0 0 3px #fff; 
 	-moz-box-shadow: inset 0 0 0 3px #fff; 
 	-o-box-shadow: inset 0 0 0 3px #fff; 
 	-ms-box-shadow: inset 0 0 0 3px #fff; 
-	box-shadow: inset 0 0 0 3px #fff; 
+	box-shadow: inset 0 0 0 3px #fff;
 }  
 /* facebook */
 .icon-border.facebook:hover::before {
@@ -138,7 +158,7 @@ body a:hover{
     margin: 17em 0;
 }
 .navbar-nav {
-    border: 3px solid #fff; 
+    border: 3px solid #4A7F4E; 
     float: none;
     display: inline-block;
 } 
@@ -150,6 +170,7 @@ div#bs-example-navbar-collapse-1 {
     padding: 0;  
 	text-align:center;
 }
+
 .navbar-default .navbar-nav > li > a {
     color: #FFF;  
 }
@@ -165,14 +186,14 @@ div#bs-example-navbar-collapse-1 {
 }
 /* Effect 14: border switch */
 .w3l-effect a { 
-	height: 57px; 
+	height: 57px;
 } 
 .w3l-effect a::before,
 .w3l-effect a::after {
 	position: absolute;
 	width: 57px;
 	height: 2px;
-	background: #fff;
+	background: #4A7F4E;
 	content: '';
 	opacity: 1;
 	-webkit-transition: all 0.3s;
@@ -235,7 +256,11 @@ div#bs-example-navbar-collapse-1 {
 	transform: rotate(0deg) translateX(50%);
 }
 /*-- //top-w3lnav --*/
- 
+
+#navbarMenu{
+	position:relative;
+   	z-index:10000;
+}
 .agileits-arrow {
     text-align: center;	
 } 
@@ -278,7 +303,7 @@ p {
 .welcome h2 {
     font-size: 1.5em;
     text-align: center;
-    color: #286b02;
+    color: #4A7F4E;
     letter-spacing: 5px;
     margin-bottom: 0.6em;
 }
@@ -358,12 +383,12 @@ p {
     width: 63%;
     
     margin-right: 2em;
-	border: 1px solid #286b02;
+	border: 1px solid #4A7F4E;
 }
 .about-right {
     background: #ececec;
     padding: 2.3em;
-	border: 1px solid #286b02;
+	border: 1px solid #4A7F4E;
 }
 .about-w3ls-text p {
     margin-bottom: 0.8em;
@@ -399,9 +424,29 @@ p {
 /*-- //about --*/
 /*-- services --*/
 .services {
+    position: relative;
+    background: #000;
+    overflow: hidden;
+    padding: 4em 0 5em;
+
+}
+.services:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.34;
+    padding: 4em 0 5em;
+    background: url(../images/1t.jpg)no-repeat center fixed;
+}
+/* .services {
     background: url(../images/1.jpg)no-repeat center fixed;
     padding: 4em 0 5em;
-}
+} */
 .services h3.w3layouts-title {
     color: #fff;
 }
@@ -409,7 +454,7 @@ p {
     text-align: center;
 }
 .w3-agile-counter {
-    color: #286b02;
+    color: #4A7F4E;
     font-size: 1.5em;
     margin: 1em 0 .1em;
     font-family: 'Open Sans', sans-serif;
@@ -430,7 +475,7 @@ p {
 	-ms-border-radius: 50%;
 	border-radius: 50%;
     text-decoration: none;
-    z-index: 1;
+    z-index: 100;
     padding: 0.8em;
 }
 .services-agile-grid span.glyphicon:after { 
@@ -457,11 +502,11 @@ p {
 	top: -7px;
 	left: -7px;
 	padding: 7px;
-	-webkit-box-shadow: 0 0 0 2px #286b02; 
-	-moz-box-shadow: 0 0 0 2px #286b02;
-	-o-box-shadow: 0 0 0 2px #286b02;
-	-ms-box-shadow: 0 0 0 2px #286b02;
-	box-shadow: 0 0 0 2px #286b02;
+	-webkit-box-shadow: 0 0 0 2px #4A7F4E; 
+	-moz-box-shadow: 0 0 0 2px #4A7F4E;
+	-o-box-shadow: 0 0 0 2px #4A7F4E;
+	-ms-box-shadow: 0 0 0 2px #4A7F4E;
+	box-shadow: 0 0 0 2px #4A7F4E;
 	-webkit-transition: -webkit-transform 0.5s, opacity 0.2s;
 	-moz-transition: -moz-transform 0.5s, opacity 0.2s;
 	-o-transition: transform 0.5s, opacity 0.2s;
@@ -476,9 +521,9 @@ p {
 	-moz-opacity: 0;
 }
 .services-agile-grid:hover span.glyphicon{
-	background:#286b02;
+	background:#4A7F4E;
 	color: #fff !important;
-	border-color: #286b02;
+	border-color: #4A7F4E;
 }
 .services-agile-grid:hover span.glyphicon:after {
 	-webkit-transform: scale(1);
@@ -509,7 +554,7 @@ p {
     width: 100%;
 }
 .team-grids h4 {
-    color: #286b02;
+    color: #4A7F4E;
     font-size: 1.6em;
     margin-top: 1em;
 }
@@ -574,11 +619,11 @@ p {
 }
 .resp-tab-active {
     text-shadow: none;
-    color: #286b02;
+    color: #4A7F4E;
     border-bottom: 2px solid;
 }
 .resp-tab-item:hover{
-	color: #286b02;
+	color: #4A7F4E;
 }
 .resp-tabs-container {
 	padding: 0px;
@@ -611,7 +656,7 @@ h2.resp-accordion {
 }  
 /*---------------*/
 .agileinfo-effect  {
-    background: #286b02;
+    background: #4A7F4E;
     overflow: hidden;
     position: relative;
 }
@@ -658,10 +703,29 @@ h2.resp-accordion {
 }
 /*-- //portfolio --*/
 /*-- testimonial --*/
-.testimonial{
+.testimonial {
+    position: relative;
+    background: #000;
+    overflow: hidden;
+    margin-top:5em;
+}
+.testimonial:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.34;
+	background:url(../images/2t.jpg)no-repeat center;
+	background-size: 100%;
+}
+/* .testimonial{
     background:url(../images/1.jpg)no-repeat center; 
 	margin-top:5em;
-}   
+}    */
 .testimonial-grids { 
 	margin: 0 auto;
 	width: 80%;
@@ -692,7 +756,7 @@ h2.resp-accordion {
     text-align: left;
 }
 .testimonial-right h5 {
-    color: #286b02;
+    color: #4A7F4E;
     margin: 0;
     font-size: 2em; 
 }
@@ -731,7 +795,7 @@ h2.resp-accordion {
 }
 .contact-form h5 {
     font-size: 2em;
-    color:#286b02;
+    color:#4A7F4E;
 }
 .contact-right p { 
     margin: 0.5em 0 2em;
@@ -753,7 +817,7 @@ h2.resp-accordion {
     color: #999;
 }
 .address p a:hover{
-    color: #286b02;
+    color: #4A7F4E;
 }
 .contact-form input[type="text"] {
     width: 32%;
@@ -790,7 +854,7 @@ input.email {
     font-size: 1em;
     margin: 1em 1em 0 0;
     -webkit-appearance: none;
-    background: #286b02;
+    background: #4A7F4E;
     transition: 0.5s all;
     -webkit-transition: 0.5s all;
     -moz-transition: 0.5s all;
@@ -805,7 +869,7 @@ input.email {
 }
 .footer h3 {
     font-size: 2.5em;
-    color: #286b02;
+    color: #4A7F4E;
     margin-bottom: 0.8em;
 }  
 .footer input[type="email"] {
@@ -820,9 +884,9 @@ input.email {
 }
 .footer input[type="submit"] {
     outline: none;
-    border: 3px solid #286b02;
+    border: 3px solid #4A7F4E;
     width: 85%;
-    background: #286b02;
+    background: #4A7F4E;
     color: #fff;
     font-size: 1.1em;
     padding: 8px 12px;
@@ -844,7 +908,7 @@ input.email {
 /*-- //footer --*/   
 /*-- footer-bottom --*/
 .footer-bottom {
-    background: url(../images/1.jpg)no-repeat center 0px;
+    background: url(../images/1t1.jpg)no-repeat center 0px;
     text-align: center;
     padding: 2em 0;
 }
@@ -891,6 +955,8 @@ input.email {
 }
 .top-w3lnav {
     margin: 15em 0;
+    position: absolute;
+    z-index: 1000;
 } 
 }
 @media(max-width:1080px){
@@ -1112,9 +1178,10 @@ h3.w3layouts-title {
     box-shadow: none;
 }
 div#bs-example-navbar-collapse-1 {
-    position: absolute;
+	margin-bottom: -2em;
+	position: absolute;
     width: 100%;
-    z-index: 99;
+    z-index: 1000;
 }
 .navbar-nav { 
     float: none; 
